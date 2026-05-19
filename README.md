@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 39 entries
+- [Scientific Research](categories/scientific-research.md) — 41 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 44 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 15 entries
 - [Finance / Trading](categories/finance-trading.md) — 25 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 90 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 110 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 92 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 113 entries
 
 ### Secondary overlap categories
 
@@ -123,6 +123,8 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [bountyhunter: Vesuvius Autoresearch](https://github.com/jonmarrs/vesuvius-autoresearch) - Scientific research: deploys the first autonomous research swarm for the Vesuvius Challenge, running a full CV research loop with hypothesis generation, hyperparameter optimization, model training, and keep/discard decisions to uncover optimal configurations for reading ancient carbonized scrolls.
 - [AutoGo](https://github.com/ericjang/autogo) - Game AI research: applies Karpathy's autoresearch to training a Go-playing AI from scratch, using cheap self-play data and fixed-time eval to keep only network architecture and training improvements across iterations.
 - [autoresearch-speedrun](https://github.com/PashaDolgirev/autoresearch-speedrun) - NanoGPT speedrun research: applies Karpathy-style autoresearch with a two-stage paired-seed acceptance funnel and a curated literature-backed idea pool, cutting val_loss from 3.9249 to 3.8093 across 30 experiments with 6 accepted changes out of ~24 honest discards.
+- [autoresearch-gym](https://github.com/gabec-slop/autoresearch-gym) - Robotics RL research: provides a Gymnasium workbench for agent-driven RL research loops under fixed benchmark contracts with live dashboard and deterministic evaluation, following the Karpathy autoresearch pattern with candidate training and metric inspection.
+- [automat](https://github.com/m-cobelli/automat) - Materials science research: applies Karpathy's autoresearch to design composition-only descriptors for materials regression tasks, requiring the agent to justify scientific reasoning behind each proposed descriptor before evaluating against held-out splits.
 
 ### Software / Systems Optimization
 
@@ -324,6 +326,8 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [deep-evolve](https://github.com/Sungmin-Cho/claude-deep-evolve) - Claude Code plugin: generalizes autoresearch from ML training to any software project with automatic evaluation harness generation, journal-based crash recovery, and self-evolutionary outer-loop strategy improvement.
 - [AutoResearch-AI](https://github.com/vukrosic/autoresearch-ai) - Autoresearch infra: provides an npm CLI that installs a durable research harness into ML repos so agents can inspect code, propose experiments, run baselines, and continue loops without losing context across sessions.
 - [autoresearch](https://github.com/charleneleong-ai/autoresearch) - Autoresearch infra: provides a self-driving experiment sweep loop with daemon-detached `autoresearch.py`, live PR-updating progress charts, and GPU monitoring for ML training projects.
+- [pi-lifeline](https://github.com/robzolkos/pi-lifeline) - Autoresearch infra: pi extension that lets smaller autoresearch models request strategic guidance from a stronger advisor model when stuck on plateaus, implementing rate-limited escalation with configurable consecutive-failure and plateau-run thresholds.
+- [autoresearch-skill-Andrej-Karpathy](https://github.com/Muminur/autoresearch-skill-Andrej-Karpathy) - Claude Code skill: turns natural-language optimization goals into autonomous goal-parsing, baseline-capture, and keep/discard loops with real-data validation, regression protection, and a reported 76% P99 latency reduction on a live signal-trading pipeline.
 
 ### Related Practices / Discussions
 
@@ -347,6 +351,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Karpathy's AutoResearch: How an ML Tool Became a Marketing Optimizer](https://monkfrom.earth/blogs/karpathy-autoresearch-explained-ml-to-marketing) - Blog: reports that Ole Lehmann adapted the autoresearch loop to landing-page copy optimization, lifting a Claude copywriting skill from 56% to 92% checklist pass rate overnight for ~$15, and also applied it to website speed (1100ms → 67ms) and cold outreach.
 - [GoatGaucho on applying Karpathy's autoresearch to TrustLayer trust scoring](https://x.com/Goat_Gaucho/status/2036546607739707879) - X: reports using a mutable scoring config plus verifier on 120 labeled agents to push sybil-risk F1 from 0% to 95.9% in two keep-or-revert experiments before shipping the new thresholds to production.
 - [I used Karpathy's AutoResearch while building my app - got 80% better AI outputs. Here's exactly how I applied it outside ML](https://www.reddit.com/r/microsaas/comments/1snubrm/i_used_karpathys_autoresearch_while_building_my/) - Reddit: says a Farcast GTM tool used an autoresearch-style ICP and channel loop against real data, keeping only more specific outreach and community recommendations and reporting roughly 80% better outputs.
+- [Applied autoresearch to Marketing Mix Modeling — 12x improvement, beat Google Meridian](https://github.com/karpathy/autoresearch/discussions/497) - GitHub Discussion: reports applying Karpathy's autoresearch loop to Marketing Mix Modeling (MMM) and achieving 12x lift over Google Meridian by iterating on model components with keep/discard decisions.
 
 ### Workflow automation / consumer ops
 
@@ -464,6 +469,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Research Worlds: governing long-running autoresearch agents](https://github.com/karpathy/autoresearch/discussions/275) - GitHub Discussion: proposes a "world file" pattern that defines the research environment (datasets, metrics, constraints, budgets) so agents stay governed even when context drifts across hours or days.
 - [Autoresearch & Self-Improving Agent Loops: Community Research Report](https://github.com/sergiocoding96/hermes-multi-agent/blob/main/autoresearch_community_report.md) - Research report: compiles community findings from YouTube, Reddit, and GitHub Discussions on Karpathy's autoresearch and self-improving agent loops as of April 2026.
 - [MinLiBuilds on Anthropic's Outcomes feature as autorsearch engineering](https://x.com/MinLiBuilds/status/2052188818137330043) - X: notes that Anthropic's new Outcomes (Codex /goal) feature is essentially autoresearch engineered into the product, signaling mainstream coding-agent platforms adopting the keep/discard loop pattern natively.
+- [Tobi Lütke on local models phoning a stronger advisor for autoresearch](https://x.com/tobi/status/2056198717225464307) - X: observes that local models can run pi-autoresearch effectively when they occasionally ask a stronger model for strategy ideas, inspiring the phone-a-friend pattern for multi-model optimization loops.
+- [TokenTelemetry — Track token cost and reasoning traces across autoresearch runs](https://github.com/karpathy/autoresearch/discussions/544) - GitHub Discussion: introduces a 100% local, open-source tool for tracking token costs and reasoning traces across autoresearch runs, surfacing expenditure patterns to inform cost-aware experiment design.
 - [Is autoresearch really better than classic hyperparameter tuning?](https://www.reddit.com/r/MachineLearning/comments/1satj6r/r_is_autoresearch_really_better_than_classic/) - Reddit: discussion comparing Karpathy-style autoresearch loops with classical hyperparameter tuning methods on the nanochat benchmark, examining whether code-editing agents genuinely outperform structured HPO.
 
 ### Knowledge Base / RAG Preparation
