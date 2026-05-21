@@ -43,10 +43,10 @@ We do **not** include:
 
 - [Scientific Research](categories/scientific-research.md) — 41 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 44 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 16 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 18 entries
 - [Finance / Trading](categories/finance-trading.md) — 25 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 94 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 99 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 114 entries
 
 ### Secondary overlap categories
@@ -195,6 +195,8 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [JustAsk](https://github.com/x-zheng16/JustAsk) - System prompt extraction: uses autoresearch-style curiosity-driven code agents to iteratively probe and reveal system prompts from frontier LLMs, accepted at ICML 2026.
 - [DSBench AutoResearch](https://github.com/dlmastery/autoresearch_dsbench) - Benchmark evaluation: applies Karpathy-style hill-climbing to each of DSBench's 74 Kaggle modeling and 38 Modeloff analysis tasks, running per-task autoresearch repos with a forensic audit that beats 82/112 DSBench baselines.
 - [Trace2Evolve](https://github.com/mohammed840/trace2evolve-autoresearch) - Customer-support agent evaluation: applies Karpathy-style autoresearch to improve a tool-using support agent by generating hard cases, scoring traces, classifying failures, and keeping candidate improvements only when benchmark metrics and reliability gates pass across retail and airline task splits.
+- [SciTriage](https://github.com/shelter951/SciTriage) - Autoresearch evaluation: evidence gates and claim discipline for AutoResearch agents, providing a diagnostic layer that determines whether experiment results are meaningful before deciding to continue or stop a run.
+- [claude-haiku-harness](https://github.com/jafanlim/claude-haiku-harness) - Prompt evaluation harness: uses an AutoResearch-style eval-driven loop to iteratively benchmark and improve prompts against production-quality targets, aiming to match Claude Haiku 4.5 quality with Sonnet/Opus benchmarks.
 
 ### Finance / Trading
 
@@ -331,6 +333,11 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-skill-Andrej-Karpathy](https://github.com/Muminur/autoresearch-skill-Andrej-Karpathy) - Claude Code skill: turns natural-language optimization goals into autonomous goal-parsing, baseline-capture, and keep/discard loops with real-data validation, regression protection, and a reported 76% P99 latency reduction on a live signal-trading pipeline.
 - [bob-autoresearch](https://github.com/barvhaim/bob-autoresearch) - IBM Bob Shell adaptation: ports Karpathy's autoresearch pattern to IBM Bob Shell as a Snake AI evolution demo that autonomously improves from random play to Hamilton-path play over 10-15 keep/discard iterations.
 - [claude-code-nightly](https://github.com/sb-arnav/claude-code-nightly) - Claude Code substrate improvement: runs a Karpathy-style autoresearch loop that mines session history into personal evaluation suites and autonomously improves CLAUDE.md, hooks, skills, and memory overnight with git-backed keep/revert decisions.
+- [autorize](https://github.com/wbbradley/autorize) - Autoresearch infra: a Rust CLI that generalizes Karpathy's autoresearch pattern into a generic iterative-improvement harness, running any agent CLI in sandboxed git worktrees against any scoring command with keep/discard decisions until a deadline fires.
+- [pts-autoresearch](https://github.com/DannyBruno/pts-autoresearch) - Prompt/tool/skill optimization harness: adapts Karpathy's three-file architecture (prepare.py, train.py, program.md) to email-triage eval suites, running a hill-climb loop that keeps only higher-scoring prompt and tool configurations.
+- [research-autopilot](https://github.com/crabin/research-autopilot) - Codex research skill: turns a research codebase into an autonomous experimentation workflow by generating the three-file autoresearch scaffold and supporting autonomous keep/discard decisions.
+- [agent-goal-stack](https://github.com/DefaultPerson/agent-goal-stack) - Claude Code plugin: implements a deterministic keep-or-revert metric loop (`/ags:autoresearch`) with cross-LLM rescue hooks on stuck iterations and pre-merge review, warming up the native /goal and autoresearch patterns.
+- [open-autoresearch](https://github.com/rbudnar/open-autoresearch) - Autoresearch protocol: provides a 1700-line protocol specification (AutoResearch++ v0.4) plus copyable scaffolding for disciplined autonomous ML research loops with honest separation between in-band-advisory and out-of-band-enforced controls.
 
 ### Related Practices / Discussions
 
