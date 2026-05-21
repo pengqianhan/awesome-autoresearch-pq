@@ -46,7 +46,7 @@ We do **not** include:
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 20 entries
 - [Finance / Trading](categories/finance-trading.md) — 25 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 104 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 105 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 116 entries
 
 ### Secondary overlap categories
@@ -353,6 +353,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [DeepXiv SDK](https://github.com/DeepXiv/deepxiv_sdk) - Agent infrastructure: provides a progressive, token-aware data interface (MCP/SDK/CLI) that lets research agents navigate academic papers via structured, layered views.
 - [AI 方法演化图谱](https://intern-atlas.opendatalab.org.cn/#api) - Scientific memory: structures 60 years of AI methodology evolution into a causal graph, letting research agents topologically query and evaluate research ideas via API.
 - [Agent-Native Research Artifacts](https://www.orchestra-research.com/ara) - Executable research: defines the ARA protocol that packages research into cognitive, physical, exploration graph, and evidence layers, enabling automated verification and extension by AI agents.
+- [Science Skills](https://github.com/google-deepmind/science-skills/tree/main) - Agent skills: provides structured instructions, scripts, and resources for genomics, structural biology, cheminformatics, and literature search to accelerate agentic research workflows.
 
 ### Related Practices / Discussions
 
