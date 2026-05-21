@@ -21,6 +21,7 @@ SECONDARY = [
     "knowledge-base-rag-preparation.md",
     "market-research.md",
     "workflow-automation.md",
+    "others.md",
 ]
 
 OPEN_TRACKING = [
@@ -61,7 +62,7 @@ def pluralize(count: int) -> str:
 
 def parse_category(filename: str) -> Category:
     path = REPO_ROOT / "categories" / filename
-    lines = path.read_text().splitlines()
+    lines = path.read_text(encoding="utf-8").splitlines()
 
     try:
         title = next(line[2:].strip() for line in lines if line.startswith("# "))
@@ -230,7 +231,7 @@ def build_readme() -> str:
 
 
 def main() -> None:
-    README_PATH.write_text(build_readme())
+    README_PATH.write_text(build_readme(), encoding="utf-8")
 
 
 if __name__ == "__main__":

@@ -41,19 +41,20 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 41 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 44 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 16 entries
+- [Scientific Research](categories/scientific-research.md) — 44 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 47 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 20 entries
 - [Finance / Trading](categories/finance-trading.md) — 25 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 94 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 114 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 104 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 116 entries
 
 ### Secondary overlap categories
 
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 4 entries
 - [Market Research](categories/market-research.md) — 1 entry
 - [Workflow Automation](categories/workflow-automation.md) — 9 entries
+- [Others](categories/others.md) — 3 entries
 
 ### Open categories still being tracked
 
@@ -77,6 +78,7 @@ Some entries intentionally appear in more than one overlap category when the sam
 - [Knowledge Base / RAG Preparation](#knowledge-base-rag-preparation) ([source](categories/knowledge-base-rag-preparation.md))
 - [Market Research](#market-research) ([source](categories/market-research.md))
 - [Workflow Automation](#workflow-automation) ([source](categories/workflow-automation.md))
+- [Others](#others) ([source](categories/others.md))
 
 ## Full list
 
@@ -125,6 +127,9 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [autoresearch-speedrun](https://github.com/PashaDolgirev/autoresearch-speedrun) - NanoGPT speedrun research: applies Karpathy-style autoresearch with a two-stage paired-seed acceptance funnel and a curated literature-backed idea pool, cutting val_loss from 3.9249 to 3.8093 across 30 experiments with 6 accepted changes out of ~24 honest discards.
 - [autoresearch-gym](https://github.com/gabec-slop/autoresearch-gym) - Robotics RL research: provides a Gymnasium workbench for agent-driven RL research loops under fixed benchmark contracts with live dashboard and deterministic evaluation, following the Karpathy autoresearch pattern with candidate training and metric inspection.
 - [automat](https://github.com/m-cobelli/automat) - Materials science research: applies Karpathy's autoresearch to design composition-only descriptors for materials regression tasks, requiring the agent to justify scientific reasoning behind each proposed descriptor before evaluating against held-out splits.
+- [The AI Scientist](https://github.com/SakanaAI/AI-Scientist) - Scientific research: automates the complete scientific research lifecycle, brainstorming ideas, writing and running ML experiments, and authoring full LaTeX papers in an autonomous loop.
+- [The AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) - Scientific research: extends the original AI Scientist with a progressive agentic tree-search and Vision-Language Model feedback loop to refine figures and text without human code templates.
+- [AI-Researcher](https://github.com/HKUDS/AI-Researcher) - Scientific research: coordinates a multi-agent system to automate end-to-end research pipelines, designing, implementing, and validating machine learning algorithms against experimental datasets.
 
 ### Software / Systems Optimization
 
@@ -174,6 +179,9 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [auto-arch-tournament](https://github.com/FeSens/auto-arch-tournament) - CPU architecture optimization: extends Karpathy's autoresearch loop to SystemVerilog RTL, proposing, implementing, and measuring microarchitectural hypotheses through riscv-formal, Verilator cosim, and FPGA place-and-route to achieve +91.9% CoreMark on a RISC-V core.
 - [autoresearch-function](https://github.com/vneyman/autoresearch-function) - Function optimization: adapts Karpathy's autoresearch to a CPU-only scaffold that benchmarks arbitrary functions against correctness, execution time, memory, and throughput metrics, keeping only edits that improve a composite score.
 - [vllm-autoresearch](https://github.com/pitcany/vllm-autoresearch) - Inference serving optimization: applies Karpathy's autoresearch to find optimal vLLM serving configurations for Llama 3.3 70B on 2× RTX 5090, editing one config at a time and benchmarking against throughput, latency, and noise-floor metrics with keep/discard decisions.
+- [Learning Beyond Gradients](https://trinkle23897.github.io/learning-beyond-gradients/) - Heuristic learning: applies coding agents to directly edit and refactor codebase rules and policies (Atari, robotics) based on environment feedback without updating neural weights.
+- [HL-ImageNet](https://github.com/xisen-w/hl-imagenet) - Visual heuristic learning: employs coding agents to iteratively develop, verify, and refine symbolic visual algebra code on ImageNet in a closed loop.
+- [Trajevo](https://github.com/ai4co/trajevo) - Trajectory prediction: automatically generates and refines trajectory prediction heuristics through an LLM evolutionary loop with cross-generation elite sampling.
 
 ### Evaluation / Red Teaming
 
@@ -195,6 +203,10 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [JustAsk](https://github.com/x-zheng16/JustAsk) - System prompt extraction: uses autoresearch-style curiosity-driven code agents to iteratively probe and reveal system prompts from frontier LLMs, accepted at ICML 2026.
 - [DSBench AutoResearch](https://github.com/dlmastery/autoresearch_dsbench) - Benchmark evaluation: applies Karpathy-style hill-climbing to each of DSBench's 74 Kaggle modeling and 38 Modeloff analysis tasks, running per-task autoresearch repos with a forensic audit that beats 82/112 DSBench baselines.
 - [Trace2Evolve](https://github.com/mohammed840/trace2evolve-autoresearch) - Customer-support agent evaluation: applies Karpathy-style autoresearch to improve a tool-using support agent by generating hard cases, scoring traces, classifying failures, and keeping candidate improvements only when benchmark metrics and reliability gates pass across retail and airline task splits.
+- [PaperBench](https://github.com/openai/preparedness) - Evaluation benchmark: evaluates AI agent capabilities by testing whether they can autonomously replicate published ICML machine learning papers from scratch in isolated environments.
+- [ResearchClawBench](https://github.com/InternScience/ResearchClawBench) - Evaluation benchmark: evaluates end-to-end scientific agent capabilities across 40 tasks in 10 disciplines by comparing generated research reports against real published papers.
+- [EinsteinArena](https://einsteinarena.com/) - Evaluation benchmark: provides a collaborative and competitive platform where AI agents propose, critique, and iteratively refine solutions to unsolved math and science problems verified by code.
+- [MLS-Bench](https://mls-bench.com/) - Evaluation benchmark: measures whether AI agents can invent generalizable and scalable ML methods across 140 tasks and 12 domains using baseline-calibrated and scope-constrained environments.
 
 ### Finance / Trading
 
@@ -331,6 +343,16 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-skill-Andrej-Karpathy](https://github.com/Muminur/autoresearch-skill-Andrej-Karpathy) - Claude Code skill: turns natural-language optimization goals into autonomous goal-parsing, baseline-capture, and keep/discard loops with real-data validation, regression protection, and a reported 76% P99 latency reduction on a live signal-trading pipeline.
 - [bob-autoresearch](https://github.com/barvhaim/bob-autoresearch) - IBM Bob Shell adaptation: ports Karpathy's autoresearch pattern to IBM Bob Shell as a Snake AI evolution demo that autonomously improves from random play to Hamilton-path play over 10-15 keep/discard iterations.
 - [claude-code-nightly](https://github.com/sb-arnav/claude-code-nightly) - Claude Code substrate improvement: runs a Karpathy-style autoresearch loop that mines session history into personal evaluation suites and autonomously improves CLAUDE.md, hooks, skills, and memory overnight with git-backed keep/revert decisions.
+- [OpenEvolve](https://github.com/algorithmicsuperintelligence/openevolve) - Evolutionary coding: automates algorithmic discovery and optimization by mutating code via LLMs, evaluating candidates against custom scorers, and maintaining diversity using MAP-Elites.
+- [Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) - Claude Code skill: provides Markdown-only skills that implement a plan-draft-review-iterate-persist loop across Claude Code and other CLIs to automate research tasks.
+- [Academic Research Skills](https://github.com/Imbad0202/academic-research-skills) - Claude Code skill: packages interactive planning, PRISMA reviews, and LaTeX quality checks into a Socratic research copilot skill for Claude Code.
+- [Scientific Agent Skills](https://github.com/K-Dense-AI/scientific-agent-skills) - Agent skills: provides over 135 database-querying and analysis skills across bioinformatics, chemistry, and clinical research for Cursor, Claude Code, and Gemini.
+- [ToolUniverse](https://github.com/mims-harvard/ToolUniverse) - Agent infrastructure: standardizes tool discovery and execution with a unified protocol and access to over 1000 scientific APIs to turn any LLM into an autonomous scientist.
+- [Meta-Harness](https://github.com/stanford-iris-lab/meta-harness) - Scaffold optimization: optimizes the surrounding code, memory, and tool-routing logic of LLMs by letting a proposer agent analyze execution traces and rewrite the harness in a closed loop.
+- [Adding arXiv and 150M+ abstracts to Paperclip](https://gxl.ai/blog/adding-arxiv-and-abstracts) - Agent infrastructure: exposes millions of arXiv articles and OpenAlex abstracts as a virtual filesystem for agents to grep and query via MCP.
+- [DeepXiv SDK](https://github.com/DeepXiv/deepxiv_sdk) - Agent infrastructure: provides a progressive, token-aware data interface (MCP/SDK/CLI) that lets research agents navigate academic papers via structured, layered views.
+- [AI 方法演化图谱](https://intern-atlas.opendatalab.org.cn/#api) - Scientific memory: structures 60 years of AI methodology evolution into a causal graph, letting research agents topologically query and evaluate research ideas via API.
+- [Agent-Native Research Artifacts](https://www.orchestra-research.com/ara) - Executable research: defines the ARA protocol that packages research into cognitive, physical, exploration graph, and evidence layers, enabling automated verification and extension by AI agents.
 
 ### Related Practices / Discussions
 
@@ -476,6 +498,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Tobi Lütke on local models phoning a stronger advisor for autoresearch](https://x.com/tobi/status/2056198717225464307) - X: observes that local models can run pi-autoresearch effectively when they occasionally ask a stronger model for strategy ideas, inspiring the phone-a-friend pattern for multi-model optimization loops.
 - [TokenTelemetry — Track token cost and reasoning traces across autoresearch runs](https://github.com/karpathy/autoresearch/discussions/544) - GitHub Discussion: introduces a 100% local, open-source tool for tracking token costs and reasoning traces across autoresearch runs, surfacing expenditure patterns to inform cost-aware experiment design.
 - [Is autoresearch really better than classic hyperparameter tuning?](https://www.reddit.com/r/MachineLearning/comments/1satj6r/r_is_autoresearch_really_better_than_classic/) - Reddit: discussion comparing Karpathy-style autoresearch loops with classical hyperparameter tuning methods on the nanochat benchmark, examining whether code-editing agents genuinely outperform structured HPO.
+- [Autoresearch Paradigm Fire](https://paragiri.com/blog/2026/autoresearch-paradigm-fire/) - Blog: discusses applying the autoresearch paradigm to optimize fire parameterization formulas in climate Earth System Models using an LLM keep/discard loop.
+- [Autonomous AI research for nanogpt speedrun](https://www.primeintellect.ai/auto-nanogpt) - Blog: reviews a 10,000-run speedrun experiment where Claude Code and Codex optimized training configurations for NanoGPT under the modded-nanogpt benchmark.
 
 ### Knowledge Base / RAG Preparation
 
@@ -505,6 +529,14 @@ Source file: [`categories/workflow-automation.md`](categories/workflow-automatio
 - [Autoresearch for Software Development](https://github.com/smallnest/autoresearch) - Software delivery automation: adapts autoresearch to GitHub Issues by rotating agents through implement → review → fix loops, then auto-merging only issues that clear a score gate plus build, lint, and test checks.
 - [autobrowse](https://skills.sh/browserbase/skills/autobrowse) - Browser workflow automation: applies an autoresearch loop to browser tasks by iterating on `strategy.md`, replaying tasks with Browserbase, and graduating only reliable workflows into reusable Claude Code skills.
 - [Google Play Description Autoresearcher](https://github.com/kevserimirogullari-hash/google-play-description-autoresearcher) - ASO optimization: applies a Karpathy-style autoresearch loop to Google Play Store long descriptions, running ~25 keyword-density experiments per session and committing only description variants that improve keyword match scores.
+
+### Others
+
+Source file: [`categories/others.md`](categories/others.md)
+
+- [Paperorchestra](https://yiwen-song.github.io/paper_orchestra/) - Scientific writing: automates LaTeX manuscript compiling and section writing from pre-writing logs without a closed-loop experiment engine.
+- [PaperBanana](https://dwzhu-pku.github.io/PaperBanana/) - Scientific illustration: orchestrates multi-agent teams (planner, visualizer, critic) to generate publication-ready methodology diagrams and plots.
+- [General Agent: A Self-Evolving, Synthetic Agent Environment](https://www.primeintellect.ai/blog/general-agent) - Agent training: generates a self-evolving task and tool environment using a synthesizer-solver loop to train agentic tool use.
 
 ## Submission format
 
