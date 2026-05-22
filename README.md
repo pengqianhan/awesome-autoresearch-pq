@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 41 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 44 entries
+- [Scientific Research](categories/scientific-research.md) — 42 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 45 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 18 entries
-- [Finance / Trading](categories/finance-trading.md) — 25 entries
+- [Finance / Trading](categories/finance-trading.md) — 26 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 99 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 114 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 115 entries
 
 ### Secondary overlap categories
 
@@ -125,6 +125,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [autoresearch-speedrun](https://github.com/PashaDolgirev/autoresearch-speedrun) - NanoGPT speedrun research: applies Karpathy-style autoresearch with a two-stage paired-seed acceptance funnel and a curated literature-backed idea pool, cutting val_loss from 3.9249 to 3.8093 across 30 experiments with 6 accepted changes out of ~24 honest discards.
 - [autoresearch-gym](https://github.com/gabec-slop/autoresearch-gym) - Robotics RL research: provides a Gymnasium workbench for agent-driven RL research loops under fixed benchmark contracts with live dashboard and deterministic evaluation, following the Karpathy autoresearch pattern with candidate training and metric inspection.
 - [automat](https://github.com/m-cobelli/automat) - Materials science research: applies Karpathy's autoresearch to design composition-only descriptors for materials regression tasks, requiring the agent to justify scientific reasoning behind each proposed descriptor before evaluating against held-out splits.
+- [wattcast-autoresearch](https://github.com/kristenmartino/wattcast-autoresearch) - Energy demand forecasting: applies Karpathy's autoresearch to weather-aware energy demand forecasting across 8 U.S. grid regions, iterating on feature engineering and hyperparameters from a 3.13% MAPE baseline.
 
 ### Software / Systems Optimization
 
@@ -174,6 +175,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [auto-arch-tournament](https://github.com/FeSens/auto-arch-tournament) - CPU architecture optimization: extends Karpathy's autoresearch loop to SystemVerilog RTL, proposing, implementing, and measuring microarchitectural hypotheses through riscv-formal, Verilator cosim, and FPGA place-and-route to achieve +91.9% CoreMark on a RISC-V core.
 - [autoresearch-function](https://github.com/vneyman/autoresearch-function) - Function optimization: adapts Karpathy's autoresearch to a CPU-only scaffold that benchmarks arbitrary functions against correctness, execution time, memory, and throughput metrics, keeping only edits that improve a composite score.
 - [vllm-autoresearch](https://github.com/pitcany/vllm-autoresearch) - Inference serving optimization: applies Karpathy's autoresearch to find optimal vLLM serving configurations for Llama 3.3 70B on 2× RTX 5090, editing one config at a time and benchmarking against throughput, latency, and noise-floor metrics with keep/discard decisions.
+- [WAFPlanet Autoresearch](https://github.com/wafplanet/autoresearch) - WAF security optimization: applies Karpathy's autoresearch to OWASP ModSecurity CRS configuration, running 30 autonomous experiments and lifting balanced accuracy from 80.8% to 98.4% while cutting false positives by 94.5%.
 
 ### Evaluation / Red Teaming
 
@@ -205,6 +207,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [atlas-gic](https://github.com/chrisworsey55/atlas-gic) - Trading: applies Karpathy-style autoresearch to a swarm of market agents, rewriting the worst-performing prompts and keeping changes only when rolling Sharpe improves.
 - [autoresearch-trading](https://github.com/erix/autoresearch-trading) - Options trading: applies an autoresearch-style keep/revert loop to SPY strategy parameters, logging each experiment against backtest metrics.
 - [autoresearch-trading](https://github.com/dietmarwo/autoresearch-trading) - Trading research: combines Karpathy-style autoresearch with classical optimization so the agent iterates on strategy structure while an optimizer tunes parameters and walk-forward validation decides what survives.
+- [binance-trading-karpathy-autoresearch-results](https://github.com/dxeroz2/binance-trading-karpathy-autoresearch-results) - Crypto trading research: publishes results from 4 years of Binance trading data optimized through Karpathy's autoresearch method, with an iterative strategy proposal → backtest → keep/discard loop across multiple assets.
 - [BTCautoresearch](https://github.com/CBaquero/BTCautoresearch) - Bitcoin forecasting: uses Karpathy-style autoresearch to mutate a single formula file, score walk-forward out-of-sample RMSE, and keep only forecasting rules that beat the baseline power law.
 - [autoresearch-skfolio](https://github.com/CarloNicolini/autoresearch-skfolio) - Portfolio optimization: edits a single portfolio-research script, runs fixed out-of-sample validation across multiple datasets and reversed-return variants, and keeps only Deflated Sharpe Ratio gains.
 - [AutoHypothesis](https://github.com/arteemg/AutoHypothesis) - Portfolio research: runs a Karpathy-style autoresearch loop on `agent.py`, iterating on DEV data and keeping only stock-selection hypotheses that clear one-shot holdback and walk-forward gates before final holdout evaluation.
@@ -483,6 +486,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Tobi Lütke on local models phoning a stronger advisor for autoresearch](https://x.com/tobi/status/2056198717225464307) - X: observes that local models can run pi-autoresearch effectively when they occasionally ask a stronger model for strategy ideas, inspiring the phone-a-friend pattern for multi-model optimization loops.
 - [TokenTelemetry — Track token cost and reasoning traces across autoresearch runs](https://github.com/karpathy/autoresearch/discussions/544) - GitHub Discussion: introduces a 100% local, open-source tool for tracking token costs and reasoning traces across autoresearch runs, surfacing expenditure patterns to inform cost-aware experiment design.
 - [Is autoresearch really better than classic hyperparameter tuning?](https://www.reddit.com/r/MachineLearning/comments/1satj6r/r_is_autoresearch_really_better_than_classic/) - Reddit: discussion comparing Karpathy-style autoresearch loops with classical hyperparameter tuning methods on the nanochat benchmark, examining whether code-editing agents genuinely outperform structured HPO.
+- [When does autoresearch need a human? — ProlificAI HITL study](https://huggingface.co/blog/ProlificAI/autoresearch-hitl-experiment) - Blog: reports a controlled study applying Karpathy's autoresearch to a DPO task with 50 experiments and 300 human judges, finding the metric directionally correct (ρ=+0.80) but a 5-minute conversational check-in unlocked recipes the autonomous loop never reached across 8 hours.
 
 ### Knowledge Base / RAG Preparation
 
