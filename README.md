@@ -41,7 +41,7 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 42 entries
+- [Scientific Research](categories/scientific-research.md) — 43 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 45 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 18 entries
 - [Finance / Trading](categories/finance-trading.md) — 26 entries
@@ -126,6 +126,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [autoresearch-gym](https://github.com/gabec-slop/autoresearch-gym) - Robotics RL research: provides a Gymnasium workbench for agent-driven RL research loops under fixed benchmark contracts with live dashboard and deterministic evaluation, following the Karpathy autoresearch pattern with candidate training and metric inspection.
 - [automat](https://github.com/m-cobelli/automat) - Materials science research: applies Karpathy's autoresearch to design composition-only descriptors for materials regression tasks, requiring the agent to justify scientific reasoning behind each proposed descriptor before evaluating against held-out splits.
 - [wattcast-autoresearch](https://github.com/kristenmartino/wattcast-autoresearch) - Energy demand forecasting: applies Karpathy's autoresearch to weather-aware energy demand forecasting across 8 U.S. grid regions, iterating on feature engineering and hyperparameters from a 3.13% MAPE baseline.
+- [lawforge](https://github.com/PAMF2/lawforge) - Mathematics theorem proving research: applies a Karpathy Loop outer driver with Agent57 bandit meta-controller and arXiv-scanning autoresearch to Lean 4 equational-theory proving, keeping only edits that improve val_solved_rate across automatically proposed hypothesis arms.
 
 ### Software / Systems Optimization
 
