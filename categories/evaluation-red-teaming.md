@@ -26,7 +26,12 @@ Use this category for examples where autoresearch is used to attack, evaluate, h
 - [JustAsk](https://github.com/x-zheng16/JustAsk) - System prompt extraction: uses autoresearch-style curiosity-driven code agents to iteratively probe and reveal system prompts from frontier LLMs, accepted at ICML 2026.
 - [DSBench AutoResearch](https://github.com/dlmastery/autoresearch_dsbench) - Benchmark evaluation: applies Karpathy-style hill-climbing to each of DSBench's 74 Kaggle modeling and 38 Modeloff analysis tasks, running per-task autoresearch repos with a forensic audit that beats 82/112 DSBench baselines.
 - [Trace2Evolve](https://github.com/mohammed840/trace2evolve-autoresearch) - Customer-support agent evaluation: applies Karpathy-style autoresearch to improve a tool-using support agent by generating hard cases, scoring traces, classifying failures, and keeping candidate improvements only when benchmark metrics and reliability gates pass across retail and airline task splits.
+<<<<<<< HEAD
 - [PaperBench](https://github.com/openai/preparedness) - Evaluation benchmark: evaluates AI agent capabilities by testing whether they can autonomously replicate published ICML machine learning papers from scratch in isolated environments.
 - [ResearchClawBench](https://github.com/InternScience/ResearchClawBench) - Evaluation benchmark: evaluates end-to-end scientific agent capabilities across 40 tasks in 10 disciplines by comparing generated research reports against real published papers.
 - [EinsteinArena](https://einsteinarena.com/) - Evaluation benchmark: provides a collaborative and competitive platform where AI agents propose, critique, and iteratively refine solutions to unsolved math and science problems verified by code.
 - [MLS-Bench](https://mls-bench.com/) - Evaluation benchmark: measures whether AI agents can invent generalizable and scalable ML methods across 140 tasks and 12 domains using baseline-calibrated and scope-constrained environments.
+=======
+- [SciTriage](https://github.com/shelter951/SciTriage) - Autoresearch evaluation: evidence gates and claim discipline for AutoResearch agents, providing a diagnostic layer that determines whether experiment results are meaningful before deciding to continue or stop a run.
+- [claude-haiku-harness](https://github.com/jafanlim/claude-haiku-harness) - Prompt evaluation harness: uses an AutoResearch-style eval-driven loop to iteratively benchmark and improve prompts against production-quality targets, aiming to match Claude Haiku 4.5 quality with Sonnet/Opus benchmarks.
+>>>>>>> main

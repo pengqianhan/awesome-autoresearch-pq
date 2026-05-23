@@ -54,6 +54,10 @@ Use this category for examples where autoresearch improves code, kernels, models
 - [auto-arch-tournament](https://github.com/FeSens/auto-arch-tournament) - CPU architecture optimization: extends Karpathy's autoresearch loop to SystemVerilog RTL, proposing, implementing, and measuring microarchitectural hypotheses through riscv-formal, Verilator cosim, and FPGA place-and-route to achieve +91.9% CoreMark on a RISC-V core.
 - [autoresearch-function](https://github.com/vneyman/autoresearch-function) - Function optimization: adapts Karpathy's autoresearch to a CPU-only scaffold that benchmarks arbitrary functions against correctness, execution time, memory, and throughput metrics, keeping only edits that improve a composite score.
 - [vllm-autoresearch](https://github.com/pitcany/vllm-autoresearch) - Inference serving optimization: applies Karpathy's autoresearch to find optimal vLLM serving configurations for Llama 3.3 70B on 2× RTX 5090, editing one config at a time and benchmarking against throughput, latency, and noise-floor metrics with keep/discard decisions.
+<<<<<<< HEAD
 - [Learning Beyond Gradients](https://trinkle23897.github.io/learning-beyond-gradients/) - Heuristic learning: applies coding agents to directly edit and refactor codebase rules and policies (Atari, robotics) based on environment feedback without updating neural weights.
 - [HL-ImageNet](https://github.com/xisen-w/hl-imagenet) - Visual heuristic learning: employs coding agents to iteratively develop, verify, and refine symbolic visual algebra code on ImageNet in a closed loop.
 - [Trajevo](https://github.com/ai4co/trajevo) - Trajectory prediction: automatically generates and refines trajectory prediction heuristics through an LLM evolutionary loop with cross-generation elite sampling.
+=======
+- [WAFPlanet Autoresearch](https://github.com/wafplanet/autoresearch) - WAF security optimization: applies Karpathy's autoresearch to OWASP ModSecurity CRS configuration, running 30 autonomous experiments and lifting balanced accuracy from 80.8% to 98.4% while cutting false positives by 94.5%.
+>>>>>>> main
