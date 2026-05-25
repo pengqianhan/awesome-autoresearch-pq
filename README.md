@@ -46,8 +46,8 @@ We do **not** include:
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 18 entries
 - [Finance / Trading](categories/finance-trading.md) — 26 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 100 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 116 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 101 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 124 entries
 
 ### Secondary overlap categories
 
@@ -344,6 +344,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [agent-goal-stack](https://github.com/DefaultPerson/agent-goal-stack) - Claude Code plugin: implements a deterministic keep-or-revert metric loop (`/ags:autoresearch`) with cross-LLM rescue hooks on stuck iterations and pre-merge review, warming up the native /goal and autoresearch patterns.
 - [open-autoresearch](https://github.com/rbudnar/open-autoresearch) - Autoresearch protocol: provides a 1700-line protocol specification (AutoResearch++ v0.4) plus copyable scaffolding for disciplined autonomous ML research loops with honest separation between in-band-advisory and out-of-band-enforced controls.
 - [Odyssey Engine](https://github.com/Zhifeng-Niu/odyssey-engine) - Autoresearch infra: fuses autoresearch metric-driven experiments with gaggle-iterate checkpoint/verify/rollback and ralph-loop continuous execution into a universal Claude Code iteration engine with three orientations (engineer/creative/production) and git-backed keep/discard waypoints.
+- [polyresearch](https://github.com/superagent-ai/polyresearch) - Distributed autoresearch infra: extends Karpathy's loop to multiple machines in a shared queue with independent verification, complete experiment history, and open contributor participation through structured GitHub coordination.
 
 ### Related Practices / Discussions
 
@@ -479,6 +480,14 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 
 - [Autoresearch Is Reward Function Design](https://cameronwestland.com/autoresearch-is-reward-function-design/) - Blog: applies pi-autoresearch to optimize a Python finance scoring pipeline across 49 experiments with keep/discard, cutting p95 latency from 339ms to 34ms and arguing that autoresearch success hinges on reward-function design quality rather than the loop mechanics.
 - [Kirill Krainov on adapting autoresearch for agentic coding skill improvement](https://zerocopy.blog/2026/03/25/karpathys-autoresearch-improving-agentic-coding-skills/) - Blog: adapts Karpathy's autoresearch loop with multi-metric evaluation (correctness, clarity, performance, completeness) to build a self-improving agentic coding harness that iterates on skill prompts through deterministic experiments and stateless keep/discard cycles.
+- [Show HN: LibreOffice-rs — pure-Rust LibreOffice built using autoresearch](https://news.ycombinator.com/item?id=38773512) - Hacker News: reports building a pure-Rust DOCX/XLSX/PPTX/ODF toolkit using Karpathy-style autoresearch loops to iteratively optimize format conversions and benchmark throughput against LibreOffice.
+- [Tobi Lütke on /autoresearch making Liquid 53% faster](https://x.com/tobi/status/2032212531846971413) - X: reports running `/autoresearch` on the Shopify Liquid template engine codebase and achieving 53% faster combined parse+render time through autonomous keep/discard iterations.
+- [Autoresearch for Refactoring Code](https://taoofmac.com/space/notes/2026/03/29/1300) - Blog: describes applying the autoresearch keep/discard pattern to refactoring tasks, treating code quality metrics as the evaluation signal and iterating on one file at a time.
+- [AutoExp: one-liner autoresearch for any training code](https://github.com/wizwand/autoexp) - GitHub: provides a CLI that wraps any training script into a Karpathy-style autoresearch loop with automatic baseline capture, experiment logging, and keep/discard decisions.
+- [Autoresearch for Integer Factorization](https://github.com/iliazintchenko/agent-factoring) - GitHub: extends the autoresearch pattern to integer factorization by treating an agent as an adversarial proposer that explores search-space modifications and keeps only those that break existing factoring barriers.
+- [Autonomous RL Fine-Tuning on Ephemeral GPUs via Autoresearch](https://templarresearch.substack.com/p/autonomous-rl-fine-tuning-on-ephemeral) - Blog: extends Karpathy's autoresearch to RL fine-tuning on ephemeral GPU instances, adding checkpoint-aware experiment queuing and cost-budget gates to the keep/discard loop.
+- [NM Framework: 3000 agents running autoresearch experiments](https://nervousmachine.substack.com/p/3000-agents-are-running-experiments) - Blog: describes operating a swarm of 3,000 AI agents organized in a factory pattern with specialized researcher, reviewer, and memory roles, each running modification→verification loops in parallel.
+- [Using autoresearch to trace family history back to Jamestown](https://fulghum.io/genealogy) - Blog: applies Karpathy's autoresearch pattern to genealogy by having Claude Code iteratively search archives, verify ancestor claims against multiple sources, and commit only confirmed lineage expansions.
 
 ### Infra / benchmarking ideas (continued)
 
